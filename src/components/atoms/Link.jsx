@@ -20,7 +20,7 @@ const LinkStyled = styled.a`
     }
 
     &.bodyLink{
-        color: ${COLORS.secondary};
+        color: ${COLORS.secondary.normal};
         font-weight: ${WEIGHTS.bold};
         font-size: 1rem;
         text-decoration: underline;
