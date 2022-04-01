@@ -18,23 +18,39 @@ function Button({ type, children }) {
 
 
 // TODO: Pensar nos botões com padding diferente;
-// TODO: Estilo hover;
 const ButtonStyled = styled.button`
   font-size: 1rem;
   font-weight: ${WEIGHTS.bold};
   border: none;
   padding: 14px 24px;
+  cursor: pointer;
 
   &.primary {
-    background-color: ${COLORS.primary};
+    background-color: ${COLORS.primary.normal};
     border-radius: ${RADIUS.sm};
     color: ${COLORS.black};
+
+    :hover {
+      background-color: ${COLORS.primary.hover};
+    }
+
+    :active {
+      background-color: ${COLORS.primary.active};
+    }
   }
 
   &.secondary {
-    background-color: ${COLORS.secondary};
+    background-color: ${COLORS.secondary.normal};
     border-radius: ${RADIUS.sm};
     color: ${COLORS.white};
+
+    :hover {
+      background-color: ${COLORS.secondary.hover};
+    }
+
+    :active {
+      background-color: ${COLORS.secondary.active};
+    }
   }
 `
 
