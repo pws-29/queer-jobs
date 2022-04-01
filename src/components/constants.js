@@ -1,8 +1,16 @@
 export const COLORS = {
   black: '#000000',
   white: '#ffffff',
-  primary: '#fcbf49',
-  secondary: '#2b566d',
+  primary: {
+    normal: '#fcbf49',
+    hover: '#ffd382',
+    active: '#ffa800'
+  },
+  secondary: {
+    normal: '#003049',
+    hover: '#577d91',
+    active: '#003049'
+  },
   grey: {
     primary: '#f3f2f5',
     secondary: '#a4a4a4'
