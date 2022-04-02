@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import {COLORS, WEIGHTS} from '../constants'
 
 
+
 function Link({children, type, target}) {
     return (
         <LinkStyled className={type} href={target}>{children}</LinkStyled>
@@ -24,6 +25,11 @@ const LinkStyled = styled.a`
         font-weight: ${WEIGHTS.bold};
         font-size: 1rem;
         text-decoration: underline;
+                
+    }
+
+    :hover{
+        color: #577d91;
     }
 
 `
