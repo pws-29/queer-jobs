@@ -13,7 +13,8 @@ export const COLORS = {
   },
   grey: {
     primary: '#f3f2f5',
-    secondary: '#a4a4a4'
+    secondary: '#a4a4a4',
+    hover: '#6c6c6c'
   },
 };
 

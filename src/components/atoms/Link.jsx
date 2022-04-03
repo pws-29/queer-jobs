@@ -1,14 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
-import {COLORS, WEIGHTS} from '../constants'
+import { COLORS, WEIGHTS } from '../constants'
 
-
-
-function Link({children, type, target}) {
-    return (
-        <LinkStyled className={type} href={target}>{children}</LinkStyled>
-    )
-}
+/**
+ * ### Parâmetros
+ * 
+ * @param {string} type - Tipo do link - suggested_value: 'headerLink' or 'bodyLink';
+ * @param {string} children - Descrição do link - suggested_value: 'Clique aqui';
+ * @param {string} target - href do Link - suggested_value: '/';
+ * 
+ */
+function Link({ children, type, target }) {
+  return (
+    <LinkStyled className={type} href={target}>{children}</LinkStyled>
+  );
+};
 
 const LinkStyled = styled.a`
     cursor: pointer;
@@ -18,6 +24,10 @@ const LinkStyled = styled.a`
         font-weight: ${WEIGHTS.regular};
         font-size: 1.125rem;
         text-decoration: none;
+
+        :hover{
+            color: ${COLORS.grey.hover};
+        }
     }
 
     &.bodyLink{
@@ -25,13 +35,13 @@ const LinkStyled = styled.a`
         font-weight: ${WEIGHTS.bold};
         font-size: 1rem;
         text-decoration: underline;
-                
+        
+        :hover{
+            color: ${COLORS.secondary.hover};
+        }
     }
-
-    :hover{
-        color: #577d91;
-    }
+    
 
 `
 
-export  default Link;
+export default Link;
