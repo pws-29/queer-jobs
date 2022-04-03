@@ -1,5 +1,3 @@
-import Link from "./components/atoms/Link"
-
 
 function App() {
 
