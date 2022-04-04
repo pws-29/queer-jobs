@@ -34,12 +34,12 @@ const Icon = ({ type, size }) => {
 
 
 const Wrapper = styled.div`
-
+  
 `
 
 const IconWrapper = styled.img`
-  width: ${props => `${props.size}px`}; 
-
+  width: ${props => `${props.size}px`};
+  padding: 9px;
 `
 
 
