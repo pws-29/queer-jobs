@@ -6,36 +6,37 @@ import Verified from '../../../public/assets/icons/Verified.svg';
 
 
 const icons = {
-  heart: heart, 
+  heart: heart,
   trophy: trophy,
   verified: Verified,
-  
+
 };
 
-const Icon = ({ type, color, size}) => {
+/**
+ * 
+ * ### Parâmetros
+ * 
+ * @param {string} type - Tipo do ícone. - suggested_value: ["heart", "trophy", "verified"]
+ * @param {string} size - Tamanho do ícone. Preencher apenas se necessáro. - suggested_value: "" ou "200"
+ * 
+ */
+
+const Icon = ({ type, size }) => {
   const src = icons[type];
-  
+
   return (
     <Wrapper>
-      <IconWrapper src={src} color={color} size={size} />
+      <IconWrapper src={src} size={size} />
     </Wrapper>
   );
 
-  }
+}
 
 
 const Wrapper = styled.div`
-  & > svg {
-    display: block;
-    width: ${props => `${props.size}px`};
 
-    /* eu colocaria  width: ${(p) => p.Width}rem; 
-    pq  esses 3 são de páginas e não linkam a  nada.  Alias, colocaria H3 estão antes de h3.*/
-    
-  }
+`
 
-  
-`;
 const IconWrapper = styled.img`
   width: ${props => `${props.size}px`}; 
 
