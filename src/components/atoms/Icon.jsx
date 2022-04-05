@@ -9,7 +9,6 @@ const icons = {
   heart: heart,
   trophy: trophy,
   verified: Verified,
-
 };
 
 /**
