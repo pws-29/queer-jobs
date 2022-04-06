@@ -12,7 +12,7 @@ export const COLORS = {
     active: '#003049'
   },
   grey: {
-    primary: '#f3f2f5',
+    primary: '#f6f6f6',
     secondary: '#a4a4a4',
     hover: '#6c6c6c'
   },
