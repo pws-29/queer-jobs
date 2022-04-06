@@ -24,13 +24,17 @@ function Header() {
 const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0 120px;
     height: 80px;
 
 `
 
 const Nav = styled.nav`
-    
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
 `
 
 export default Header
