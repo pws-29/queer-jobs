@@ -11,12 +11,12 @@ const images = {
 /**
  * ### Parâmetros
  * 
- * @param {string} type - Nome da imagem a ser renderizada. Usar nome do asset sem extensão - suggested_value: ['home-plans-1', 'home-plans-2']
+ * @param {string} imageName - Nome da imagem a ser renderizada. Usar nome do asset sem extensão - suggested_value: ['home-plans-1', 'home-plans-2']
  * 
  */
 function ImagePlaceholder({ imageName }) {
   const imagePath = images[imageName]
-
+  console.log(imageName);
   return (
     <Wrapper>
       <Img src={imagePath} />

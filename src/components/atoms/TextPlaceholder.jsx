@@ -16,7 +16,6 @@ import { WEIGHTS } from '../constants';
  */
 
 function TextPlaceholder({ children, color }) {
-  console.log(children)
   return (
     <Text color={color}>{children}</Text>
   );
