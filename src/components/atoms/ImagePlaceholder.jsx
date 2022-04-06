@@ -1,13 +1,25 @@
 import React from 'react'
 import styled from 'styled-components'
 import homePlansLeft from '../../../public/images/home-plans-1.jpg'
-// import homePlansRight from '../../../public/images/home-plans-2.jpg'
+import homePlansRight from '../../../public/images/home-plans-2.png'
 
+const images = {
+  'home-plans-1': homePlansLeft,
+  'home-plans-2': homePlansRight
+};
 
-function ImagePlaceholder() {
+/**
+ * ### Parâmetros
+ * 
+ * @param {string} type - Nome da imagem a ser renderizada. Usar nome do asset sem extensão - suggested_value: ['home-plans-1', 'home-plans-2']
+ * 
+ */
+function ImagePlaceholder({ imageName }) {
+  const imagePath = images[imageName]
+
   return (
     <Wrapper>
-      <Img src={homePlansLeft} />
+      <Img src={imagePath} />
     </Wrapper>
   );
 };
