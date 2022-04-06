@@ -22,13 +22,13 @@ const ButtonStyled = styled.button`
   font-size: 1rem;
   font-weight: ${WEIGHTS.bold};
   border: none;
-  padding: 14px 24px;
   cursor: pointer;
 
   &.primary {
     background-color: ${COLORS.primary.normal};
     border-radius: ${RADIUS.sm};
     color: ${COLORS.black};
+    padding: 14px 24px;
 
     :hover {
       background-color: ${COLORS.primary.hover};
@@ -43,6 +43,7 @@ const ButtonStyled = styled.button`
     background-color: ${COLORS.secondary.normal};
     border-radius: ${RADIUS.sm};
     color: ${COLORS.white};
+    padding: 7px 52px;
 
     :hover {
       background-color: ${COLORS.secondary.hover};
