@@ -3,18 +3,18 @@ import styled from "styled-components";
 import Logo from "../atoms/Logo";
 import Link from "../atoms/Link";
 import Button from "../atoms/Button";
-import {COLORS} from "../constants";
+import { COLORS } from "../constants";
 
 function Header() {
   return (
-      <Wrapper>
-          <Logo />
-          <Nav>
-            <Link type="headerLink" target="/">Para canditados</Link>
-            <Link type="headerLink" target="/">Para empresas</Link>
-            <Button type="secondary">Login</Button>
-          </Nav>
-      </Wrapper>
+    <Wrapper>
+      <Logo />
+      <Nav>
+        <Link type="headerLink" target="/">Para canditados</Link>
+        <Link type="headerLink" target="/">Para empresas</Link>
+        <Button type="secondary" size="sm">Login</Button>
+      </Nav>
+    </Wrapper>
   )
 }
 
