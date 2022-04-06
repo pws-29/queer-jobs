@@ -21,7 +21,7 @@ function MainText() {
       </TextWrapper>
       <Spacer size={80} />
       <ButtonsGroup>
-        <Button type="primary">Criar perfil do candidato</Button>
+        <Button type="primary" size="md">Criar perfil do candidato</Button>
         <Spacer size={24} />
         <Link type="bodyLink">Cadastrar minha empresa</Link>
       </ButtonsGroup>
