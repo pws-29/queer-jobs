@@ -1,12 +1,17 @@
-
+import styled from "styled-components";
+import Header from "./components/layouts/Header";
 
 function App() {
 
   return (
-    <>
-      <h1>Hello World!</h1>
-    </>
+    <Wrapper>
+      <Header />
+    </Wrapper>
   );
 };
+
+const Wrapper = styled.div`
+  
+`
 
 export default App

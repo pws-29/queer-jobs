@@ -25,14 +25,12 @@ const Wrapper = styled.div`
     padding: 0 120px;
     height: 80px;
     background-color: ${COLORS.grey.primary};
-
 `
 
 const Nav = styled.nav`
     display: flex;
     align-items: center;
     gap: 40px;
-
 `
 
 export default Header
