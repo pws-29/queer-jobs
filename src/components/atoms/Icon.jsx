@@ -17,7 +17,7 @@ const icons = {
  * 
  * @param {string} type - Tipo do ícone. - suggested_value: ["heart", "trophy", "verified"]
  * @param {string} size - Tamanho do ícone. Preencher apenas se necessáro. - suggested_value: "" ou "200"
- * @param {boolean} background - Defini se o ícone possui background. Preencher apenas se necessáro. - suggested_value: true or false
+ * @param {boolean} background - Define se o ícone possui background. Preencher apenas se necessáro. - suggested_value: true or false
  * 
  */
 
