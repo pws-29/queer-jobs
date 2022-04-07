@@ -15,9 +15,10 @@ import styled from 'styled-components';
  * @param {string} description - Descrição do card
  * @param {string} buttonLabel - Label do botão - suggested_value: 'Clique aqui';
  * @param {string} buttonType - Tipo do botão - suggested_value: 'primary' or 'secondary';
+ * @param {string} buttonSize - Tamanho do botão - suggested_value: ['sm', 'md', 'lg']';
  * 
  */
-function PlanCard({ image, plan, title, description, buttonLabel, buttonType }) {
+function PlanCard({ image, plan, title, description, buttonLabel, buttonType, buttonSize }) {
   return (
     <Wrapper>
       <ImagePlaceholder imageName={image} />
@@ -30,7 +31,7 @@ function PlanCard({ image, plan, title, description, buttonLabel, buttonType }) 
         <p>{description}</p>
       </TextPlaceholder>
       <Spacer size={40} />
-      <Button type={buttonType}>{buttonLabel}</Button>
+      <Button type={buttonType} size={buttonSize}>{buttonLabel}</Button>
     </Wrapper>
   );
 };
