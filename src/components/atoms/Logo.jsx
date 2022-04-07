@@ -11,7 +11,7 @@ import logo from '../../../public/assets/logo.svg'
  */
 function Logo({ size }) {
   return (
-    <Link>
+    <Link href='/'>
       <LogoWrapper src={logo} size={size} />
     </Link>
   );
