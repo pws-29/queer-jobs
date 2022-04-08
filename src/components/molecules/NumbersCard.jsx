@@ -22,7 +22,11 @@ function NumbersCard({ title, description }) {
   );
 };
 
+// TODO: Refatorar CSS
+
 const Wrapper = styled.div`
+  display: flex;
+  max-width: 140px;
   h1 {
       background-color: ${COLORS.primary.normal};
       width: fit-content;
