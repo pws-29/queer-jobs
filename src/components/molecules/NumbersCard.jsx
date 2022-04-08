@@ -16,6 +16,7 @@ function NumbersCard({ title, description }) {
     <Wrapper>
       <TextPlaceholder>
         <h1>{title}</h1>
+        <Spacer size={6} />
         <p>{description}</p>
       </TextPlaceholder>
     </Wrapper>
