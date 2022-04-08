@@ -13,22 +13,27 @@ import styled from "styled-components";
  * @param {string} description - Descrição do card 
  * 
  */
-function InfoCard({icon, iconBackground, title, description}) {
+function InfoCard({ icon, iconBackground, title, description }) {
   return (
     <Wrapper>
-        <Icon type={icon} background={iconBackground} />
-        <Spacer size={32}/>
-        <TextPlaceholder>
-            <h3>{title}</h3>
-            <Spacer size={24}/>
-            <p>{description}</p>
-        </TextPlaceholder>
+      <Icon type={icon} background={iconBackground} />
+      <Spacer size={32} />
+      <TextPlaceholder>
+        <h3>{title}</h3>
+        <Spacer size={24} />
+        <p>{description}</p>
+      </TextPlaceholder>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.div`
-    
+  max-width: 335px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 `
 
 export default InfoCard
